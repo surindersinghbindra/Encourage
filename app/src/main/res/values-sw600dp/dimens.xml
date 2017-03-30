@@ -1,0 +1,21 @@
+<resources>
+
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw600dp devices (e.g. 7" tablets) here.
+    -->
+
+    <item name="menuFromDegrees" format="float" type="dimen">180.0</item>
+    <item name="menuToDegrees" format="float" type="dimen">270.0</item>
+
+       <dimen name="menuChildSize">43dp</dimen>
+              <dimen name="menuChildSize1">40dp</dimen>
+    <dimen name="plus1Width">67dp</dimen>
+    <dimen name="plus1Height">67dp</dimen>
+    <dimen name="dividerHeight">10dp</dimen>
+    <dimen name="datemarginTop">130dp</dimen>
+    <dimen name="datemarginleft">130dp</dimen>
+     <dimen name="forgetpasswordimage">200dp</dimen>
+    
+
+</resources>

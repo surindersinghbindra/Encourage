@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <item name="menuFromDegrees" format="float" type="dimen">180.0</item>
+    <item name="menuToDegrees" format="float" type="dimen">270.0</item>
+
+      <dimen name="menuChildSize">20dp</dimen>
+        <dimen name="menuChildSize1">35dp</dimen>
+    <dimen name="plus1Width">68dp</dimen>
+    <dimen name="plus1Height">68dp</dimen>
+    <dimen name="dividerHeight">8dp</dimen>
+    <dimen name="datemarginTop">2dp</dimen>
+    <dimen name="datemarginleft">20dp</dimen>
+     <dimen name="forgetpasswordimage">200dp</dimen>
+
+</resources>

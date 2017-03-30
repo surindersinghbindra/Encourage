@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/signup_Main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signupbackgroundblurr"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textsn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="Sign Up"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"/>
+
+            <com.nearnia.encouragement.util.DCircularImageView
+                android:id="@+id/profileImage"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_below="@+id/textsn"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/transparent"
+                android:scaleType="center"/>
+
+            <ImageView
+                android:id="@+id/addProfileImageButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/profileImage"
+                android:src="@drawable/pic_add_button"/>
+
+            <LinearLayout
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profileImage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/FULLNAME"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_fullname"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/fullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@android:color/transparent"
+                    android:digits="@string/user_fullname_entries"
+                    android:hint="Regina Williams"
+                    android:inputType="textPersonName"
+                    android:singleLine="true"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:src="@drawable/divider"/>
+
+                <TextView
+                    android:id="@+id/PHONENUMBER"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PHONE NUMBER"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/phoneNumber"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:hint="Number"
+                    android:inputType="phone"
+                    android:maxLength="12">
+                </EditText>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:src="@drawable/divider"/>
+
+                <TextView
+                    android:id="@+id/EMAILID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EMAIL"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/EmailId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignLeft="@+id/textView3"
+                    android:layout_below="@+id/textUSERNAME"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:hint="regina@gmail.com"
+
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    >
+                </EditText>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:src="@drawable/divider"/>
+
+                <TextView
+                    android:id="@+id/BIRTHDAY"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BIRTHDAY"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/DATEOFBIRTHPICKER"
+                    style="@style/date_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignLeft="@+id/textView3"
+                    android:layout_below="@+id/textUSERNAME"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:focusableInTouchMode="false"
+                    android:hint="10 AUG 1985"
+                    android:inputType="none"
+                    android:textIsSelectable="true">
+                </EditText>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:src="@drawable/divider"/>
+
+                <LinearLayout
+                    android:id="@+id/innerpasswordlayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/birthDate"
+                    android:layout_marginLeft="0dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/GENDER"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="GENDER"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"/>
+
+                    <RadioGroup
+                        android:id="@+id/gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentTop="true"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/MALE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="MALE"
+                            android:textColor="@android:color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/FEMALE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="FEMALE"
+                            android:textColor="@android:color/black"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/innerpasswordlayout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/divider1"
+                    android:layout_marginLeft="0dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:text="PASSWORD"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/editTextPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/innerpasswordlayout"
+                    android:layout_marginRight="32dp"
+                    android:layout_toLeftOf="@+id/textView1"
+                    android:background="@android:color/transparent"
+                    android:ems="15"
+                    android:hint="password"
+                    android:inputType="textPassword"
+                    android:maxLength="12"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:src="@drawable/divider"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:gravity="left|center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+
+                        android:id="@+id/cb_policy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        />
+
+                    <TextView
+
+                        android:id="@+id/tv_policy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:minLines="2"
+                        android:text="@string/policy"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+
+                <Button
+
+                    android:id="@+id/createAnAccount"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/bg_button_rounded"
+                    android:text="CREATE AN ACCOUNT"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/signIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:text="ALREADY HAVE AN ACCOUNT ? SIGN IN"
+                    android:textColor="@android:color/black"
+                    android:textStyle="italic"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

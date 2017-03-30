@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageView
+        android:id="@+id/bussinessImage"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY" />
+
+    <!--
+       <ImageView
+        android:id="@+id/LionRoar2"
+        
+       android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/logo" />
+    -->
+
+    <ListView
+        android:clickable="true"
+        android:id="@+id/lvFirstIntent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bussinessImage"
+        android:scrollbars="none" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/top_layout22"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorHelpScreens"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/tutorial3"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            />
+
+<!--         <ImageView
+            android:id="@+id/tutorial1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/tutorialframesubcategory21"
+            android:visibility="gone" />
+ -->
+        <!--
+             <ImageView
+            android:id="@+id/tutorial2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/firstintent2"
+            android:visibility="gone" />
+        -->
+    </RelativeLayout>
+    
+    
+       <RelativeLayout
+        android:id="@+id/top_layout33"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorHelpScreens"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/tutorial34"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+           />
+
+        <!--
+             <ImageView
+            android:id="@+id/tutorial2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/firstintent2"
+            android:visibility="gone" />
+        -->
+    </RelativeLayout>
+    
+
+    <ImageView
+        android:id="@+id/imageViewAddButton12"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/lvFirstIntent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/add1" />
+
+</RelativeLayout>

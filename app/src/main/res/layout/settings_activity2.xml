@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/innerlayoutCover"
+        android:layout_width="match_parent"
+        android:layout_height="140dp" >
+
+        <ProgressBar
+            android:id="@+id/progressbarSmall"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="#26A69A"
+            android:indeterminateTintMode="multiply"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/profile_cover_image"
+            android:layout_width="fill_parent"
+            android:layout_height="140dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/regenarobinsonbackground" />
+
+        <View
+            android:id="@+id/strutCenter"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="95dp"
+            android:background="@drawable/hamarabacground" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/strutCenter"
+            android:background="@drawable/hamarabacground" >
+
+            <TextView
+                android:id="@+id/userNAme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="-5dp"
+                android:paddingLeft="5dp"
+                android:text="Regina Williams"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/LionRoar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/logo" />
+
+    <ScrollView
+        android:id="@+id/selected_categories_settings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/profile_image"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/LinearlayoutinScrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+    <com.nearnia.encouragement.util.DCircularImageView
+        android:id="@+id/profile_image"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="107dp"
+        android:layout_weight="1"
+        android:src="@drawable/user1" />
+
+    <TextView
+        android:id="@+id/website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/innerlayoutCover"
+        android:paddingLeft="3dp"
+        android:text="Set Your Bussiness Here"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#26A69A"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:id="@+id/layoutbuttonsforviewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/website" >
+
+        <Button
+            android:id="@+id/slelctedcategories_btn"
+            android:layout_width="24dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/slelctedcategories_btn_selector" />
+
+        <Button
+            android:id="@+id/liked_btn"
+            android:layout_width="24dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/liked_btn_selctor" />
+
+        <Button
+            android:id="@+id/own_wriiten_btn"
+            android:layout_width="24dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/own_written_btn_selector" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutbuttonsforviewpager"
+        android:layout_weight="1" >
+    </android.support.v4.view.ViewPager>
+
+    <View
+        android:id="@+id/viewline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/pager"
+        android:background="#000000" />
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignTop="@+id/website"
+        android:layout_toRightOf="@+id/website"
+        android:src="@drawable/writeown_2" />
+
+    <TextView
+        android:id="@+id/profileTagLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/website"
+        android:layout_marginBottom="-5dp"
+        android:paddingLeft="70dp"
+        android:text="Set Your taglineHere"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        android:visibility="visible" />
+
+    <ImageView
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignTop="@+id/profileTagLine"
+        android:layout_toRightOf="@+id/profileTagLine"
+        android:src="@drawable/writeown_2" />
+
+    <RelativeLayout
+        android:id="@+id/top_layout_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88666666"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/WithNameGreatJob"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+ 
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-5dp"
+                android:layout_marginTop="120dp"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="0pt"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textViewName1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewName"
+                android:layout_marginBottom="-10dp"
+                android:layout_marginTop="-10dp"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="0pt"
+                android:text="Click on me in the future"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textViewName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewName1"
+                android:layout_marginBottom="-10dp"
+                android:layout_marginTop="-10dp"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="0pt"
+                android:text="to get back to"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textViewName3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewName2"
+                android:layout_marginBottom="-10dp"
+                android:layout_marginTop="-10dp"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="0pt"
+                android:text="the channels choice."
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textViewName4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewName3"
+                android:layout_marginBottom="-10dp"
+                android:layout_marginTop="-1dp"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="0pt"
+                android:text="Tap anywhere to continue"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/tutorial8"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+       
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

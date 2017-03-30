@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:id="@+id/uppermost"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/clockSign"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/time" />
+
+        <ImageButton
+            android:id="@+id/closeButton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+
+            android:background="@drawable/close" />
+
+        <TextView
+            android:id="@+id/dateOnPopUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@+id/clockSign"
+            android:gravity="center_horizontal"
+            android:text="TIME"
+            android:textColor="#26A69A"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/uppermost"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/fromwhere"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="YOUR ENCOURAGEMENT"
+            android:textAllCaps="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <!--
+             <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/quoteRecieved"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do. If you haven&apos;t found it yet, keep looking. Don&apos;t settle. As with all matters of the heart, you&apos;ll know when you find it."
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:typeface="monospace" />
+        -->
+
+
+        <!--
+             <TextView
+            android:id="@+id/profileString"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="sireigns CEO of Nearnia"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#26A69A"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:typeface="monospace" />
+        -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white" >
+
+            <TextView
+                android:id="@+id/encouragementQoute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:layout_marginTop="5dp"
+                android:ellipsize="start"
+              android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center_horizontal"
+                android:text="Error in fetching quote! Sorry!"
+                android:textColor="@android:color/background_dark"
+                android:textSize="22sp"
+                android:typeface="monospace" />
+
+            <com.nearnia.encouragement.util.DCircularImageView
+                android:id="@+id/user_profile_image"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/encouragementQoute"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/user1" />
+
+            <ImageButton
+                android:id="@+id/heart"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/encouragementQoute"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/username_who_written"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/heart"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/user_profile_image"
+                android:text="-username"
+                android:textColor="@android:color/background_dark" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:id="@+id/write_your_own_layour_button"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_toLeftOf="@+id/strut"
+                android:background="@drawable/bg_button_rounded"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:text="Write Your Own"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/whitepen" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/strut"
+                android:layout_width="3dp"
+                android:layout_height="48dp"
+                android:layout_centerHorizontal="true" />
+
+            <LinearLayout
+                android:id="@+id/discover_more_layout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginRight="3dp"
+                android:layout_toRightOf="@+id/strut"
+                android:background="@drawable/bg_button_rounded"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="2dp"
+                    android:background="@android:color/transparent"
+                    android:text="Discover More"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/whitebook" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

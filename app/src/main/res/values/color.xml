@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="blue">#ff2570ba</color>
+    <color name="grey">#f7f7f7</color>
+    <color name="colorPrimary">#26A69A</color>
+    <color name="colorPrimaryDark">#26A69A</color>
+    <color name="textColorPrimary">#26A69A</color>
+    <color name="windowBackground">#26A69A</color>
+    <color name="navigationBarColor">#26A69A</color>
+    <color name="colorAccent">#26A69A</color>
+    
+    <color name="colorHelpScreens">#88666666</color>
+   
+
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <TextView
+        android:id="@+id/qoute_written"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="No Quote Written by you"
+        android:textColor="@android:color/background_dark" />
+
+    <com.nearnia.encouragement.util.DCircularImageView
+        android:id="@+id/user_profile_image"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/qoute_written"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/user1" />
+
+    <ImageButton
+        android:id="@+id/heart"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/qoute_written"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/sub_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/heart"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/user_profile_image"
+        android:text="-username"
+        android:textColor="@android:color/background_dark" />
+
+</RelativeLayout>
